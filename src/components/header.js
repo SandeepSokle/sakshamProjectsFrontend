@@ -5,7 +5,6 @@ import MuiAppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
-// import {  useNavigate } from "react-router-dom";
 import Badge from "@mui/material/Badge";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import React, { useState } from "react";
@@ -148,7 +147,11 @@ const NavbarTop = (props) => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
+              cursor:"pointer"
               // justifyContent: "space-evenly",
+            }}
+            onClick={()=>{
+              history("/home")
             }}
           >
             {/* <Link to="/home" innerRef={anchorRef}> */}

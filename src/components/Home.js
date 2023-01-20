@@ -76,7 +76,7 @@ const Home = () => {
         <Button
           disabled={!isSelectAny}
           variant="outlined"
-          color="success"
+          color="error"
           sx={{
             position: "fixed",
             right: "1rem",
