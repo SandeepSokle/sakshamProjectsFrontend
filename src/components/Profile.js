@@ -64,6 +64,7 @@ const Profile = () => {
             sx={{ width: "13rem", height: "13rem" }}
           />
           <h3>{user?.data?.name}</h3>
+          <h3>Balance : {user?.data?.balance}</h3>
           <h4>{user?.data?.email}</h4>
         </Box>
         <Box
@@ -131,6 +132,7 @@ const Profile = () => {
             }}
           >
             {user?.data?.gifts?.map((e, i) => {
+              console.log(e,i);
               return (
                 <SendGiftHelper
                   id={e}

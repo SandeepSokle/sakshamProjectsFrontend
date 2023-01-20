@@ -47,7 +47,9 @@ const SendGiftHelper = ({ id, idx, getAllData, userEmail }) => {
       return ele._id === id;
     });
     setTreeDetail(dt);
-  }, []);
+  }, [id]);
+
+
 
   const [open, setOpen] = React.useState(false);
   const [users, setUsers] = React.useState([]);
