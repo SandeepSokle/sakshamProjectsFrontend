@@ -68,8 +68,15 @@ export default function HomeHelper({ data, idx }) {
         title="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {data.name}
+        <Typography gutterBottom variant="h5" component="div" sx={{
+          display:"flex",
+          flexDirection:"row",
+          alignItems:"center",
+          justifyContent:"space-between"
+        }}>
+          <div>{data.name}</div>
+          <div>Rs {data.rate}</div>
+          
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {/* Lizards are a widespread group of squamate reptiles, with over 6,000
