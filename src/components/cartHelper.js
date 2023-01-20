@@ -34,7 +34,7 @@ const CartHelper = ({
       return ele._id === id;
     });
     setTreeDetail(dt);
-  }, []);
+  }, [id]);
 
   const handlePurchage = async () => {
     try {
