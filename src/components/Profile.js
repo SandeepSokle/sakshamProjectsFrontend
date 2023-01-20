@@ -24,7 +24,7 @@ const Profile = () => {
     return data.data.product;
   };
 
-  console.log(user)
+  // console.log(user)
 
   return (
     <>
@@ -132,7 +132,7 @@ const Profile = () => {
             }}
           >
             {user?.data?.gifts?.map((e, i) => {
-              console.log(e,i);
+              // console.log(e,i);
               return (
                 <SendGiftHelper
                   id={e}

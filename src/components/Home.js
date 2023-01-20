@@ -36,7 +36,7 @@ const Home = () => {
         email: user.data.email,
         product,
       });
-      console.log(crt);
+      // console.log(crt);
       dispatch(updateUser(crt.data));
     } catch (err) {
       console.log(err);
@@ -44,7 +44,7 @@ const Home = () => {
   };
 
   const addMultiple = async () => {
-    console.log(SelectedItems);
+    // console.log(SelectedItems);
     for (let i = 0; i < SelectedItems.length; i++) {
       await handleCart(SelectedItems[i]);
     }

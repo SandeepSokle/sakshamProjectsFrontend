@@ -52,7 +52,7 @@ export default function HomeHelper({ data, idx }) {
         email:user.data.email,
         product:data._id
       })
-      console.log(crt)
+      // console.log(crt)
       dispatch(updateUser(crt.data))
     }catch(err){
       console.log(err)

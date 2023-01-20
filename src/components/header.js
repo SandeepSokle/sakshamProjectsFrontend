@@ -103,7 +103,7 @@ const NavbarTop = (props) => {
   };
 
   const handlePurchage = async () => {
-    console.log(checked.map((e) => cartdata[e]));
+    // console.log(checked.map((e) => cartdata[e]));
     try {
       let dt = await axios.post("http://localhost:8080/users/purchase", {
         email: user?.data?.email,

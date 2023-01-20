@@ -80,7 +80,7 @@ const SendGiftHelper = ({ id, idx, getAllData, userEmail }) => {
         toEmail,
         productId: id,
       });
-      console.log(dt.data.fUser)
+      // console.log(dt.data.fUser)
       dispatch(updateUser(dt.data.fUser));
       getAllData();
       alert(`Gifted Successfully`);
@@ -90,7 +90,7 @@ const SendGiftHelper = ({ id, idx, getAllData, userEmail }) => {
       alert(err);
     }
   };
-  console.log(treeDetail);
+  // console.log(treeDetail);
 
   return (
     <ListItem

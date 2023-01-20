@@ -42,7 +42,7 @@ const CartHelper = ({
         email: userEmail,
         plants: [id],
       });
-      console.log(dt.data.user);
+      // console.log(dt.data.user);
       if (dt.data.err.length > 0)
         alert(`Not able to Purchase ${dt.data.err.join(" : ")}`);
       else alert(`Purchased Successfully`);
@@ -53,7 +53,7 @@ const CartHelper = ({
       alert(err);
     }
   };
-  console.log(treeDetail);
+  // console.log(treeDetail);
 
   return (
     <ListItem

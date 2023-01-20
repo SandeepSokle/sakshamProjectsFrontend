@@ -16,7 +16,7 @@ export default function Login() {
   const history = useNavigate ();
 
   const handleSubmit = async () => {
-    console.log(email, password);
+    // console.log(email, password);
     try {
       let user = await axios.post("http://localhost:8080/users/login", {
         email,
@@ -27,6 +27,7 @@ export default function Login() {
       // console.log(user);
     } catch (err) {
       console.log(err);
+      alert("wrong email or password")
     }
   };
 
